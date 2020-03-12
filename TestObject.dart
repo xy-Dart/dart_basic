@@ -9,6 +9,11 @@ void main(List<String> args) {
   
   //开始测试reset 
 
+  //工作区->暂存区：git add
+  //暂存区->工作区：git checkout .
+
+  //暂存区->本地仓库：git commit  
+
   //工作区-暂存区-本地仓库
   
 }
