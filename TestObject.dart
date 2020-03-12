@@ -7,4 +7,6 @@ void main(List<String> args) {
   //运行私有的方法
   person.runPrivate();
   
+  //开始测试reset 
+  
 }
