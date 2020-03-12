@@ -8,5 +8,7 @@ void main(List<String> args) {
   person.runPrivate();
   
   //开始测试reset 
+
+  //工作区-暂存区-本地仓库
   
 }
