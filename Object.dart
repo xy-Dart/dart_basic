@@ -1,17 +1,26 @@
 class Person {
-  String id;
+  //表示私有变量
+  String _id;
   String name;
   String age;
 
   //构造方法，可选参数
   Person(String id, {String name="默认名字", String age}) {
-    this.id = id;
+    this._id = id;
     this.name = name;
     this.age = age;
   }
 
   void printPerson() {
-    print("id:${id}, name:${name}, age:${age}");
+    print("id:${_id}, name:${name}, age:${age}");
+  }
+
+  void _privateRun(){
+    print("私有方法_");
+  }
+
+  void runPrivate(){
+    this._privateRun();
   }
 }
 
@@ -21,5 +30,5 @@ void main(List<String> args) {
   print("----");
   Person person2=Person("2");
   person2.printPerson();
-  print("${person2.id}");
+  print("文件内部可以访问，${person2._id}");
 }
